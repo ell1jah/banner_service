@@ -13,4 +13,4 @@ make test
 ```
 
 ## Документация
-Доступна после запуска по урлу ```http://localhost:8080/swagger/index.html```
+Доступна после запуска по урлу ```http://localhost:5000/swagger/index.html```
