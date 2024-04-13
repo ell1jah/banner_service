@@ -11,12 +11,12 @@ func InitNilFieldsOfBanner(banner1 *entity.Banner, banner2 *entity.Banner) {
 		banner1.TagIDs = banner2.TagIDs
 	}
 
-	if banner1.Content.Title == "" {
-		banner1.Content.Title = banner2.Content.Title
-	}
-
 	if banner1.Content.Text == "" {
 		banner1.Content.Text = banner2.Content.Text
+	}
+
+	if banner1.Content.Title == "" {
+		banner1.Content.Title = banner2.Content.Title
 	}
 
 	if banner1.Content.Url == "" {
