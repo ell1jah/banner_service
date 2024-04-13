@@ -9,7 +9,6 @@ export DOCKER_IMAGE_NAME=avito_trainee_image
 
 
 run:
-	docker run --rm -d -p 5432:5432 --name avito_trainee_postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=avito-trainee postgres
 	docker compose up -d
 
 

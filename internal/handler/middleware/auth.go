@@ -6,9 +6,10 @@ import (
 	jwtutils "avito-backend-trainee-2024/pkg/utils/jwt"
 	"context"
 	"fmt"
-	"github.com/sirupsen/logrus"
 	"net/http"
 	"strconv"
+
+	"github.com/sirupsen/logrus"
 
 	maputils "avito-backend-trainee-2024/pkg/utils/map"
 )
@@ -31,7 +32,6 @@ func JWTAuthentication(headerName, secret string, logger *logrus.Logger) Handler
 			}
 
 			token := authHeader
-
 			payload, err := jwtutils.ValidateToken(token, secret)
 			if err != nil {
 				msg := fmt.Sprintf("error occurred validating token: %v", err)
